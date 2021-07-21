@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import { Card, Navigation } from '../../components';
 import { CardProps } from '../../components/Card/Card';
@@ -47,6 +48,7 @@ const Home: React.FC = () => {
               />
             ))}
       </Grid>
+      <Link to={'/Abaut'}>Aqui</Link>
     </>
   );
 };
