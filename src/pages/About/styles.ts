@@ -6,7 +6,6 @@ export const Container = styled.div`
     align-items: center;
     color: ${theme.colors.secondary};
     display: flex;
-    padding: 34px 168px;
 
     span {
       padding-left: 8px;
@@ -43,20 +42,5 @@ export const Footer = styled.footer`
 
   small {
     font-size: 10px;
-  }
-
-  button {
-    background-image: linear-gradient(
-      39deg,
-      #ff8d49 0%,
-      #ef6909 100%
-    );
-    border-radius: 6px;
-    color: ${theme.colors.white};
-    font-size: 18px;
-    font-weight: 700;
-    height: 39px;
-    margin-left: 44px;
-    width: 129px;
   }
 `;

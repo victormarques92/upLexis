@@ -7,13 +7,13 @@ import {
 
 import Details from '../pages/Details';
 import Home from '../pages/Home';
-import Abaut from '../pages/About';
+import About from '../pages/About';
 
 const Routes: React.FC = () => (
   <Router>
     <Switch>
       <Route exact path="/" component={Home} />
-      <Route exact path="/Abaut" component={Abaut} />
+      <Route exact path="/about" component={About} />
       <Route path="/:id" component={Details} />
     </Switch>
   </Router>

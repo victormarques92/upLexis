@@ -3,17 +3,26 @@ import { Link } from 'react-router-dom';
 import { FaChevronLeft } from 'react-icons/fa';
 import { SwiperSlide } from 'swiper/react';
 
-import { Box, SwiperReact } from '../../components';
+import {
+  Banner,
+  Box,
+  Button,
+  SwiperReact,
+} from '../../components';
 import Img from '../../assets/image.png';
 
 import { Container, Footer, Row, Text } from './styles';
+import bannerABout from '../../mocks/bannerABout';
 
 const About: React.FC = () => {
   return (
     <Container>
-      <Link to={'/'}>
-        <FaChevronLeft /> <span>Histórico Empresarial</span>
-      </Link>
+      <Banner data={bannerABout} />
+      <Row>
+        <Link to={'/'}>
+          <FaChevronLeft /> <span>Histórico Empresarial</span>
+        </Link>
+      </Row>
 
       <SwiperReact>
         <SwiperSlide>
@@ -55,12 +64,13 @@ const About: React.FC = () => {
             exportada no formato PDF.
           </p>
         </Text>
+
         <Footer>
           <h1>
             <small>R$</small>40,00
           </h1>
 
-          <button>Habitlitar</button>
+          <Button>Habitlitar</Button>
         </Footer>
       </Row>
     </Container>

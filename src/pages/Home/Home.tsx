@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 
-import { Card, Navigation } from '../../components';
+import { Banner, Card, Navigation } from '../../components';
 import { CardProps } from '../../components/Card/Card';
+import bannersHome from '../../mocks/bannerHome';
 import list from '../../mocks/list';
 
 import { Grid } from './styles';
@@ -21,6 +21,7 @@ const Home: React.FC = () => {
 
   return (
     <>
+      <Banner data={bannersHome} />
       <Navigation current={current} onClick={setCurrent} />
 
       <Grid>
@@ -48,7 +49,6 @@ const Home: React.FC = () => {
               />
             ))}
       </Grid>
-      <Link to={'/Abaut'}>Aqui</Link>
     </>
   );
 };
